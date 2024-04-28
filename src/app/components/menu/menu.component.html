@@ -1,0 +1,38 @@
+<div
+  id="up"
+  class="flex flex-row justify-between items-center px-7 py-7 text-culoareFont font-bold text-base md:text-base md:px-20 md:py-8 xl:text-xl xl:px-[120px] xl:py-12"
+>
+  <div class="cursor-pointer">Despre</div>
+  <div (click)="scrollServicii()" class="cursor-pointer">Servicii</div>
+  <div class="cursor-pointer">Portofoliu</div>
+  <div class="cursor-pointer">Contact</div>
+</div>
+
+<app-logo-page></app-logo-page>
+<app-servicii id="servicii"></app-servicii>
+
+<!-- SAGEATA DE SCROLLUP -->
+<button
+  (click)="scrollUp()"
+  class="bg-backGroundColor text-white rounded-full py-1 px-3 z-1 fixed bottom-7 right-7 text-base opacity-50 md:text-xl"
+>
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- BUTOANELE FIXATE DE SOCIALMEDIA -->
+<div class="fixed z-1 bottom-7">
+  <div class="flex px-6 gap-4 text-white text-xl opacity-50 md:text-2xl">
+    <a href="https://www.instagram.com/yourusername" target="_blank"
+      ><i class="fab fa-instagram"></i
+    ></a>
+    <a href="https://www.facebook.com/yourusername" target="_blank"
+      ><i class="fab fa-facebook-f"></i
+    ></a>
+    <a href="https://www.linkedin.com/in/yourusername" target="_blank"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+    <a href="https://wa.me/yourphonenumber" target="_blank"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
+  </div>
+</div>
